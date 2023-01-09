@@ -21,7 +21,7 @@ There are 4 GPIO pads that can be useful for other tasks or use a solder bridge 
  - PC12: not labeled (USART3 CLK)
 There is also a convenient programming and debugging header.
 ```
-### Pinout:
+### Terminating Resistors:
 ![Terminating Resistors](/pictures/term_resistors.png)
 
 The 120ohm terminating resistors come already connected with a small trace. If they are not needed you will need to cut the trace (RED LINE).
