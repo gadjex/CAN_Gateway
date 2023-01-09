@@ -24,7 +24,7 @@ There is also a convenient programming and debugging header.
 ### Terminating Resistors:
 ![Terminating Resistors](/pictures/term_resistors.png)
 
-The 120ohm terminating resistors come already connected with a small trace. If they are not needed you will need to cut the trace (RED LINE).
+The 120ohm terminating resistors come already connected with a small trace. If they are not needed you will need to cut the trace between the pads (RED LINE).
 
 ### Size:
 PCB: 5cm x 3cm
