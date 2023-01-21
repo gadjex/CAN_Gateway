@@ -54,7 +54,7 @@ The method I used to tap into these wires included stripping and removing a smal
 ![Prepared CAN Gateway](/pictures/gateway_prepared.jpg)
 
 ### Preparing OpenPilot
-[You will need to make changes to the OpenPilot code to make this work.](https://github.com/gadjex/openpilot/commit/cee16d28efe93724ecf8f3a1cf2935eba8f1b611). At this time a pull request has not been made or accepted into the main repo. Make sure to disable updates or even better fork the OpenPilot repo and maintain your own fork. [I also have a fork dedicated to the 2021-2023 Honda Ridgeline](https://github.com/gadjex/openpilot/tree/ridgeline) you can install with this URL:
+[You will need to make changes to the OpenPilot code to make this work](https://github.com/gadjex/openpilot/commit/cee16d28efe93724ecf8f3a1cf2935eba8f1b611). At this time a pull request has not been made or accepted into the main repo. Make sure to disable updates or even better fork the OpenPilot repo and maintain your own fork. [I also have a fork dedicated to the 2021-2023 Honda Ridgeline](https://github.com/gadjex/openpilot/tree/ridgeline) you can install with this URL:
 ```
 installer.comma.ai/gadjex/ridgeline
 ```
