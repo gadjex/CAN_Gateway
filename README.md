@@ -36,19 +36,25 @@ The CAN Gateway needs to be connected to the body CAN of the Ridgeline and CAN0 
 ![Modified Nidec Harness](/pictures/modified_nidec_harness.jpg)
 I made both of the connections to my CAN Gateway under the windshield camera cover. On the [windshield camera connector](documents/Ridgeline_Multipurpose_Camera_Unit_Connector(20-23).pdf) pins 6 and 17 are CAN-High and CAN-Low respectively. These feed into the 26-pin connector on the relay box on pins 7 (CAN-High) and 9 (CAN-Low) as PT4 and PT3 respectively. CAN0-High is pin 4 and CAN0-Low is pin 6. I used a 6 pin connector to make the CAN Gateway removable.
 
+![Harness Connections](/documents/harness_connections.png)
+
+
 The method I used to tap into these wires included stripping and removing a small piece of the insulation, wrapping a stripped end of wire around it, soldering the wires together, and covering with adhesive heatshrink. This method does not cut the wire to maintain its integerity.
+
 ![Stripped Wire](/pictures/wire_stripped.jpg)
 ![Soldered Wire](/pictures/wire_soldered.jpg)
 ![Heatshink Wire](/pictures/wire_heatshrink.jpg)
 
+
 ### Preparing the CAN Gateway
 - Use a programmer such as a ST-Link and STM32CubeIDE to program the CAN Gateway.
-- Cut the small traces to disconnect the terminating resistors as shown above.
+- Cut the small traces to disconnect the terminating resistors as [shown above](#terminating-resistors).
 - Cover the PCB. I used large heatshrink.
+
 ![Prepared CAN Gateway](/pictures/gateway_prepared.jpg)
 
 ### Preparing OpenPilot
-[You will need to make changes to the OpenPilot code to make this work.](../../../gadjex/openpilot/commit/cee16d28efe93724ecf8f3a1cf2935eba8f1b611). At this time a pull request has not been made or accepted into the main repo. Make sure to disable updates or even better fork the OpenPilot repo and maintain your own fork. [I also have a fork dedicated to the 2021-2023 Honda Ridgeline.](../../../gadjex/openpilot/tree/ridgeline) you can install with this URL:
+[You will need to make changes to the OpenPilot code to make this work.](https://github.com/gadjex/openpilot/commit/cee16d28efe93724ecf8f3a1cf2935eba8f1b611). At this time a pull request has not been made or accepted into the main repo. Make sure to disable updates or even better fork the OpenPilot repo and maintain your own fork. [I also have a fork dedicated to the 2021-2023 Honda Ridgeline](https://github.com/gadjex/openpilot/tree/ridgeline) you can install with this URL:
 ```
 installer.comma.ai/gadjex/ridgeline
 ```
