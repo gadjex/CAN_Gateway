@@ -3,6 +3,8 @@ Repurposing a cheap board that goes by the name "MB CAN Filter" on AliExpress. T
 
 The master branch contains example code I am using to relay certain message IDs from 2 seperate CAN buses operating at different bitrates.
 
+[2021-2023 Honda Ridgeline OpenPilot Modifications](#2021---2023-honda-ridgeline-openpilot-modifications)
+
 ### Hardware
 ![Front](/pictures/front.png)
 
